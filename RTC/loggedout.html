@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+.chat-wrapper {
+  font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 2px 0px #00000017;
+    max-width:700px;
+  min-width:500px;
+}
+#message-box {
+width: 97%;
+display: inline-block;
+height: 300px;
+background: #fff;
+box-shadow: inset 0px 0px 2px #00000017;
+overflow: auto;
+padding: 10px;
+}
+.user-panel{
+margin-top: 10px;
+}
+input[type=text]{
+border: none;
+padding: 5px 5px;
+box-shadow: 2px 2px 2px #0000001c;
+}
+input[type=text]#name{
+width:20%;
+}
+input[type=text]#message{
+width:60%;
+}
+button#send-message {
+
+border: none;
+padding: 5px 15px;
+background: #f4a718;
+color:white;
+box-shadow: 2px 2px 2px #0000001c;
+}
+.wrapper {
+    text-align: center;
+}
+
+.button {
+   margin-top: 2%;
+   border: none;
+   padding: 5px 15px;
+   background: #f4a718;
+   color:white;
+   box-shadow: 2px 2px 2px #0000001c;
+
+
+}
+</style>
+</head>
+<body>
+
+<div class="chat-wrapper">
+<div id="message-box"> <p>You've been logged out.<br> Press the button below to log back in</p></div>
+<div class="wrapper">
+<button class="button" onclick="goBack()">Log Back in</button>
+</div>
+</div>
+
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</body>
+</html>
